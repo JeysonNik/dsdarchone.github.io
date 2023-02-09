@@ -1,5 +1,5 @@
 body {
-  cursor: url(/images/tech/cursor-pointer.png), auto;
+  cursor: url(images\tech\cursor-pointer.png), auto;
   transition: cursor 0.5s;
   overflow-y: scroll;
 }
@@ -7,14 +7,14 @@ body::-webkit-scrollbar {
   width: 5px;
 }
 body::-webkit-scrollbar:hover {
-  cursor: url(/images/tech/cursor-main_1.png), auto;
+  cursor: url(images\tech\cursor-main_1.png), auto;
 }
 body::-webkit-scrollbar-thumb {
   background-color: #242424;
   border-radius: 10px;
 }
 body::-webkit-scrollbar-thumb:hover {
-  cursor: url(/images/tech/cursor-main_1.png), auto;
+  cursor: url(images\tech\cursor-main_1.png), auto;
 }
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
@@ -98,7 +98,7 @@ body::-webkit-scrollbar-track {
   text-align: center;
 }
 #header-bar img {
-  cursor: url(/images/tech/cursor-main_1.png), auto;
+  cursor: url(images\tech\cursor-main_1.png), auto;
   color: rgb(34, 34, 34);
   height: 20px;
 }
@@ -130,11 +130,11 @@ right: 29%;
 @media (pointer:fine) {
   #header-bar:hover #header-works {
     animation: slide-in-works 0.5s ease;
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
   }
   #header-bar:hover #header-contact {
     animation: slide-in-contact 0.5s ease;
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
   }
   #header-bar:not(:hover) #header-works {
     opacity: 0;
@@ -311,21 +311,21 @@ right: 29%;
 }
 
 .image-container:hover img {
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
     height: 45vh;
     transition: all 0.5s ease;
   }
 .image-container:not(:hover) img {
     filter: grayscale(100%);
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
     transition: all 0.5s ease;
   }
 .slide:hover img {
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
     transition: all 0.5s ease;
   }
 .slide:not(:hover) img {
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
     transition: all 0.5s ease;
   }
 .image-container.hide {
@@ -445,7 +445,7 @@ html {
     color: #d1d1d1;
 		background-color: #ffffff;
 		border-radius: 50px;
-		cursor: url(/images/tech/cursor-main_1.png), auto;
+		cursor: url(images\tech\cursor-main_1.png), auto;
     transition: 300ms all ease-in-out;
   }
   
@@ -485,10 +485,10 @@ footer {
     display: flex;
   }
 .images-container img:hover {
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
   }
 .images-container:hover {
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
   }
 .image-square {
     width: 20px;

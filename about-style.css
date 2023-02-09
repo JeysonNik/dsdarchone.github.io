@@ -1,11 +1,11 @@
 @media (pointer:fine) {
   #header-bar:hover #header-works {
     animation: slide-in-works 0.5s ease;
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
   }
   #header-bar:hover #header-contact {
     animation: slide-in-contact 0.5s ease;
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
   }
   #header-bar:not(:hover) #header-works {
     opacity: 0;
@@ -42,7 +42,7 @@
       }
 }
 body h1{
-    cursor: url(/images/tech/cursor-pointer.png), auto;
+    cursor: url(images\tech\cursor-pointer.png), auto;
     transition: cursor 0.5s;
     margin: 20px;
     margin-left: 80px;
@@ -129,7 +129,7 @@ body h1{
             margin-bottom: 30px;
             }
             .link-with-image:hover a {
-              cursor: url(/images/tech/cursor-main_1.png), auto;
+              cursor: url(images\tech\cursor-main_1.png), auto;
               }
 h3.exp-head {
     font-size: 18px;
@@ -245,7 +245,7 @@ h3.exp-head {
     text-align: center;
   }
   #header-bar img {
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
     color: rgb(34, 34, 34);
     height: 20px;
   }
@@ -276,11 +276,11 @@ h3.exp-head {
   }
   #header-bar:hover #header-works {
     animation: slide-in-works 0.5s ease;
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
   }
   #header-bar:hover #header-contact {
     animation: slide-in-contact 0.5s ease;
-    cursor: url(/images/tech/cursor-main_1.png), auto;
+    cursor: url(images\tech\cursor-main_1.png), auto;
   }
   @keyframes slide-in-contact {
     from {
@@ -367,7 +367,7 @@ h3.exp-head {
     html {
       font-family: "Bauhaus", sans-serif;
       background-color: #dadada;
-      cursor: url(/images/tech/cursor-pointer.png), auto;
+      cursor: url(images\tech\cursor-pointer.png), auto;
     }
 .gallery {
       
@@ -418,10 +418,10 @@ h3.exp-head {
       display: flex;
     }
     .images-container img:hover {
-      cursor: url(/images/tech/cursor-main_1.png), auto;
+      cursor: url(images\tech\cursor-main_1.png), auto;
     }
     .images-container:hover {
-      cursor: url(/images/tech/cursor-main_1.png), auto;
+      cursor: url(images\tech\cursor-main_1.png), auto;
     }
     .image-square {
       width: 20px;
