@@ -1,0 +1,439 @@
+@media (pointer:fine) {
+  #header-bar:hover #header-works {
+    animation: slide-in-works 0.5s ease;
+    cursor: url(/images/tech/cursor-main_1.png), auto;
+  }
+  #header-bar:hover #header-contact {
+    animation: slide-in-contact 0.5s ease;
+    cursor: url(/images/tech/cursor-main_1.png), auto;
+  }
+  #header-bar:not(:hover) #header-works {
+    opacity: 0;
+    animation: slide-out-works 0.5s ease;
+    animation-fill-mode: forwards;
+  }
+  #header-bar:not(:hover) #header-contact {
+    opacity: 0;
+    animation: slide-out-contact 0.5s ease;
+    animation-fill-mode: forwards;
+  }
+  #header-bar:hover #header-line-left {
+    width: 21%;
+    opacity: 1;
+    }
+  #header-bar:hover #header-line-right {
+    width: 21%;
+    opacity: 1;
+    }
+}
+@media only screen and (max-width: 900px) {
+ 
+  #header-bar:hover #header-line-left {
+      width: 30%;
+      }
+  #header-bar:hover #header-line-right {
+      width: 30%;
+      }
+  #header-works {
+      left: 10%;
+      }
+  #header-contact {
+      right: 10%;
+      }
+}
+body h1{
+    cursor: url(/images/tech/cursor-pointer.png), auto;
+    transition: cursor 0.5s;
+    margin: 20px;
+    margin-left: 80px;
+    
+  }
+.text-container {
+    width: 20%;
+    text-align: left;
+    display: inline-block;
+    min-width: 300px;
+}
+.skill-container {
+    width: 20%;
+    text-align: left;
+    width: 20%;
+    text-align: left;
+    display: inline-block;
+    min-width: 300px;
+    
+}
+
+.exp-container {
+    width: 100%;
+}
+.explogo-container {
+    display: grid;
+    position: relative;
+    left: -15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
+.prlogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: floating 5s ease-in-out infinite;
+        padding: 20px;
+        }
+.prlogo img {
+        filter: grayscale(100%);
+        width: 70%;
+        height: 70%;
+        object-fit: scale-down;
+        }
+    @keyframes floating {
+    0% {
+    transform: translate(0, 0);
+    }
+    25% {
+    transform: translate(calc(var(--randX) * .1%), calc(var(--randY) * .1%));
+    }
+    50% {
+    transform: translate(calc(var(--randX) * -.1%), calc(var(--randY) * -.1%));
+    }
+    75% {
+    transform: translate(calc(var(--randX) * .1%), calc(var(--randY) * .1%));
+    }
+    100% {
+    transform: translate(0, 0);
+    }
+    }
+    .a-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        }
+        
+        .link-with-image {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        }
+        
+        .link-with-image img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        padding-bottom: 30px;
+        }
+        .link-with-image a {
+            font: 12px;
+            text-decoration: none;
+            color: #000000;
+            margin-bottom: 30px;
+            }
+            .link-with-image:hover a {
+              cursor: url(/images/tech/cursor-main_1.png), auto;
+              }
+h3.exp-head {
+    font-size: 18px;
+}
+
+.exp-year {
+    position: relative;
+    top: 10px;
+    font-size: 12px;
+}
+
+.exp-firm {
+    font-size: 16px;
+    font-weight: bold;
+}
+.exp-who {
+    position: relative;
+    bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.exp-text {
+    position: relative;
+    bottom: 15px;
+    font-size: 16px;
+}
+  body::-webkit-scrollbar {
+    width: 5px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #242424;
+    border-radius: 10px;
+  }
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  }
+  #opening {
+    position: absolute;
+    width: 25%;
+    height: 98%;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5em;
+    animation: SwipeLeft 1.2s ease-in-out;
+  }
+  #opening.hide {
+    opacity: 0;
+    animation: SWipeLeft 1s ease-in-out;
+  }
+  #main {
+    display: none;
+    background-color: #fff;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  #main.show {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes SwipeLeft {
+    0% {
+      width: 25%;
+    }
+    100% {
+      width: 30%;
+      display: none;
+      opacity: 0;
+    }
+  }
+  .open-page {
+    justify-content: space-between;
+  }
+  .open-page img {
+    color: #343434;
+    height: 35px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .open-page p {
+    color: #343434;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  #header-bar {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-bottom: 0em;
+    text-align: center;
+  }
+  #header-bar img {
+    cursor: url(/images/tech/cursor-main_1.png), auto;
+    color: rgb(34, 34, 34);
+    height: 20px;
+  }
+  #header-bar nav {
+    width: 100%;
+    justify-content: space-between;
+    animation: all 0.5s ease;
+  }
+  #header-bar a {
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    margin-top: 5px;
+    padding-bottom: 1em;
+  }
+  #header-works {
+  position: absolute;
+  left: 29%;
+  }
+  #header-contact {
+  position: absolute;
+  right: 29%;
+  }
+  #header-nav {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  #header-bar:hover #header-works {
+    animation: slide-in-works 0.5s ease;
+    cursor: url(/images/tech/cursor-main_1.png), auto;
+  }
+  #header-bar:hover #header-contact {
+    animation: slide-in-contact 0.5s ease;
+    cursor: url(/images/tech/cursor-main_1.png), auto;
+  }
+  @keyframes slide-in-contact {
+    from {
+      opacity: 0;
+      transform: translateX(30%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slide-in-works {
+    from {
+      opacity: 0;
+      transform: translateX(-30%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  #header-bar:not(:hover) #header-works {
+    opacity: 0;
+    animation: slide-out-works 0.5s ease;
+    animation-fill-mode: forwards;
+  }
+  #header-bar:not(:hover) #header-contact {
+    opacity: 0;
+    animation: slide-out-contact 0.5s ease;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slide-out-works {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-30%);
+    }
+  }
+  @keyframes slide-out-contact {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(30%);
+    }
+  }
+    .header-line {
+        position: absolute;
+        margin-top: 16px;
+    }
+    #header-line-left {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(0, -55%);
+    width: 0;
+    height: 0.5px;
+    background-color: rgb(70, 70, 70);
+    transition: width 0.3s ease;
+    }
+    #header-line-right {
+    position: absolute;
+    top: 70%;
+    right: 50%;
+    transform: translate(0, -55%);
+    width: 0;
+    height: 0.5px;
+    background-color: rgb(70, 70, 70);
+    transition: width 0.3s ease;
+    }
+    #header-bar:hover #header-line-left {
+    width: 21%;
+    opacity: 1;
+    }
+    #header-bar:hover #header-line-right {
+    width: 21%;
+    opacity: 1;
+    }
+    html {
+      font-family: "Bauhaus", sans-serif;
+      background-color: #dadada;
+      cursor: url(/images/tech/cursor-pointer.png), auto;
+    }
+.gallery {
+      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 5em;
+        padding-bottom: 1.5em;
+      }
+      .text {
+        color: #000000;
+        padding: 10px;
+        font-size: 18px;
+        font-family: "Bauhaus", Impact;
+        transition: all 0.2s ease-in;
+      }
+
+      .image-container {
+        scale: 0.9;
+        display: inline-block;
+        width: calc(25%);
+        min-width: 150px;
+        height: 50vh;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        opacity: 1;
+        align-items: center;
+        z-index: 2;
+      }
+    footer {
+      width: 100%;
+      background-color: #dadada;
+    }
+    .footer-container {
+      padding-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .copyright {
+      color: #484848;
+      font-size: 14px;
+      margin-right: 15px;
+    }
+    .images-container {
+      padding-left: 10px;
+      display: flex;
+    }
+    .images-container img:hover {
+      cursor: url(/images/tech/cursor-main_1.png), auto;
+    }
+    .images-container:hover {
+      cursor: url(/images/tech/cursor-main_1.png), auto;
+    }
+    .image-square {
+      width: 20px;
+      height: 20px;
+      overflow: hidden;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .image-square img {
+      opacity: 0.5;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
